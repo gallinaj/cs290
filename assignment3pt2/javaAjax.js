@@ -1,6 +1,5 @@
 var gistList = [];
 
-
 /*Function to create request object and check browser type.
 Sourced from https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started 
 */
@@ -59,8 +58,6 @@ function fetchGists() {
 
 function createGistList(gArray, gList) {
 	var list = document.createElement('ul');
-	list.documentElement('value = "Favorites"');
-
 	
 	for(var i = 0; i < gArray.length; i++) {
 		var newLi = document.createElement('li');
@@ -78,14 +75,14 @@ function createGistList(gArray, gList) {
 		faveButton.setAttribute("gistId", gArray.id);
 		
 		faveButton.onclick = function() {
-			var gistId = this.getAttribute("gistId");
+			var gistFav = this.getAttribute("gistId");
 			//var favored = findByID(gArray, gistId);
 			for(var i = 0; i < gArray.length; i++) {
-				if(gArray[i].id === gistId.value) {
-					localStorage.setItem('gist', JSON.stringify(gArray[i]));
+				if(gArray[i].id === gistFav.id) {
+					localStorage.setItem(gistFav.id, JSON.stringify(gArray[i]));
 				}
 			}
-			//document.getElementById('searchResults').removeChild(document.getElementById(gistId.id));
+			//document.getElementById('searchResults').removeChild(document.getElementById(gistFav.id));
 			printFaveList(document.getElementById('favorites'));
 		}
 		
@@ -118,9 +115,11 @@ function printFaveList(faveList) {
 	
 		unfavButton.onclick = function() {
 			var gistId = this.getAttribute("gistId");
+		//	document.getElementById('favorites').removeChild(document.getElementById(gistId.id));
+			localStorage.removeItem(gistId.id);
 			//faveList.removeChild(document.getElementById(this.id));
 			//document.getElementById('favorites').parentElement.removeChild(document.getElementById(gistId.id));
-			printUnFaveList(document.getElementById(favorites));
+		//	printUnFaveList(document.getElementById(favorites));
 		}
 		
 		list.appendChild(newLi);
