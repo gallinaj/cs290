@@ -1,0 +1,20 @@
+
+tbody th { font-style:italic; font-weight:normal;}
+
+tbody td:nth-child(2) { color:red;}
+
+tbody td:nth-child(4) { color:blue;}	
+	
+tbody tr:nth-child(odd) {	background-color:lightgreen;}
+
+tbody tr:nth-child(even) {	background-color:lightblue;}
+	
+caption {	caption-side: top;}
+
+dt:hover + dd{ background-color:purple;}
+
+.outer-content { margin-top:20px; background-color:pink; width:75%; }
+
+.inner-content {	background-color:blue; width:75%; text-align:center; margin-left: auto; margin-right:auto;}
+
+img { float:left;}
