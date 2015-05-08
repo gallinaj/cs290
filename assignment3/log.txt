@@ -1,22 +1,4 @@
-You log goes in this  file.
 
-4/18 2:15 - 4:30
-
-4/19 3:00 - 5:20
-
-4/19 9:45 - 10:30
-
-4/22 8:30 - 11:15
-		working on Gitlog
-
-4/25 9:45 - 11
-		Working on messageLog
-		
-	11:45
-	Finished messageLog
-	
-	
-	8:40	
 	
 Start: Sat, 18 Apr 2015 09:00:41 -0800
 End: Sat, 18 Apr 2015 09:17:17 -0800
@@ -61,5 +43,15 @@ Tasks: During this period I continued research on Ajax and how to make requests 
 server.
 
 Start: Sun, 26 Apr 2015 20:40:28 -0800
-End: Sun, 26 Apr 2015 01:53:53 -0800
+End: Mon, 27 Apr 2015 01:53:53 -0800
 Tasks: During this period I did more research.
+
+Start: Mon, 27 Apr 2015 21:05:28 -0800
+End: Tues, 28 Apr 2015 12:05:53 -0800
+Tasks: During this period I did more research.
+
+Start: Wed, 29 Apr 2015 05:05:28 -0800
+End: Wed, 29 Apr 2015 11:00:53 -0800
+Tasks: During this period I watched a video of a tutoring session about Ajax and Javascript. 
+I was finally able to understand how to make requests and the other functions. Still trying 
+to make it all work but at least it makes a little more sense.
